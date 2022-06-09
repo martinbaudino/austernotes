@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "497196694080",
+    "project_id": "austernotes",
+    "storage_bucket": "austernotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497196694080:android:b510650db96912f9a8fda5",
+        "android_client_info": {
+          "package_name": "ar.baudino.austernotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497196694080-9ljnnqh8vkpqv1b0v141l1ftgsdnsfmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB66P5SJ8Gfm1qkMin66aLqCPslGV304q4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497196694080-9ljnnqh8vkpqv1b0v141l1ftgsdnsfmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
