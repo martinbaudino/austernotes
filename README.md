@@ -1,6 +1,6 @@
 # austernotes
 
-A new Flutter project.
+Minimalist note taking App in Flutter
 
 ## Getting Started
 
