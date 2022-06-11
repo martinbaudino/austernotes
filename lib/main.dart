@@ -1,5 +1,6 @@
 //import 'dart:js';
 
+import 'package:austernotes/constants/routes.dart';
 import 'package:austernotes/views/login_view.dart';
 import 'package:austernotes/views/register_view.dart';
 import 'package:austernotes/views/verify_email_view.dart';
@@ -22,9 +23,9 @@ void main() {
       ),
       home: const HomePage(),
       routes: {
-        '/login/': (context) => const LoginView(),
-        '/register/': (context) => const RegisterView(),
-        '/notes/':(context) => const NotesView(),
+        loginRoute: (context) => const LoginView(),
+        registerRoute: (context) => const RegisterView(),
+        notesRoute: (context) => const NotesView(),
       },
     ),
   );
@@ -98,7 +99,7 @@ class _NotesViewState extends State<NotesView> {
                   //devtools.log(shoulLogout.toString());
                   if (shoulLogout){
                     await FirebaseAuth.instance.signOut();
-                    Navigator.of(context).pushNamedAndRemoveUntil('/login/', (_) => false);
+                    Navigator.of(context).pushNamedAndRemoveUntil(loginRoute, (_) => false);
                   }
                   break;
               }
