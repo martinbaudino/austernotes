@@ -2,6 +2,7 @@ import 'package:austernotes/services/auth/auth_user.dart';
 
 // Abstract class that can return the instance of AuthUser
 abstract class AuthProvider {
+  Future<void> initialize();
   AuthUser? get currentUser;
   Future<AuthUser> logIn({
     required String email,
