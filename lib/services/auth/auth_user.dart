@@ -2,11 +2,12 @@
 import 'package:firebase_auth/firebase_auth.dart' show User;
 import 'package:flutter/cupertino.dart';
 
-@immutable  // Their internals are never going to be changed after initialization
-class AuthUser{
+@immutable // Their internals are never going to be changed after initialization
+class AuthUser {
   // Must know whether Email is verified
   final bool isEmailVerified;
-  const AuthUser(this.isEmailVerified);
+  const AuthUser({required this.isEmailVerified});
 
-  factory AuthUser.fromFirebase(User user) => AuthUser(user.emailVerified);
+  factory AuthUser.fromFirebase(User user) =>
+      AuthUser(isEmailVerified: user.emailVerified);
 }

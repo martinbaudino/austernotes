@@ -1,6 +1,5 @@
 import 'package:austernotes/services/auth/auth_service.dart';
 import 'package:flutter/material.dart';
-import 'dart:developer' as devtools show log;
 
 import '../constants/routes.dart';
 
